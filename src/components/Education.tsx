@@ -119,7 +119,6 @@ export default function Education() {
             Advanced degrees and industry-recognized certifications validating expertise across multiple domains
           </p>
         </div>
-
         <div className="mb-16">
           <div className="flex items-center space-x-3 mb-8">
             <BookOpen className="text-emerald-400" size={28} />
