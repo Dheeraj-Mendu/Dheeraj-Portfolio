@@ -37,6 +37,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 bg-slate-900/90 p-6 m-4 rounded-2xl">
+          {/* Logo / Name */}
           <button
             onClick={() => scrollToSection('home')}
             className="text-xl font-bold text-white hover:text-emerald-400 transition-colors"
@@ -44,7 +45,8 @@ export default function Navigation() {
             Dheeraj Mendu
           </button>
 
-          <div className="hidden md:flex space-x-8">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -54,8 +56,18 @@ export default function Navigation() {
                 {link.label}
               </button>
             ))}
+
+            {/* Resume Download Button */}
+            <a
+              href="/DheerajMendu_Resume.pdf"
+              download="DheerajMendu_Resume.pdf"
+              className="px-4 py-2 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition-colors"
+            >
+              Resume
+            </a>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-white p-2"
@@ -65,6 +77,7 @@ export default function Navigation() {
         </div>
       </div>
 
+      {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-slate-900/98 backdrop-blur-md">
           <div className="px-4 pt-2 pb-4 space-y-2">
@@ -77,6 +90,15 @@ export default function Navigation() {
                 {link.label}
               </button>
             ))}
+
+            {/* Resume Button for Mobile */}
+            <a
+              href="/DheerajMendu_Resume.pdf"
+              download="DheerajMendu_Resume.pdf"
+              className="block w-full text-left px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       )}
