@@ -34,7 +34,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm">Location</p>
-                    <p className="text-white font-semibold">Memphis, TN</p>
+                    <p className="text-white font-semibold">Pittsburgh, PA</p>
                     <p className="text-blue-400 text-sm">Open to Remote & Relocation</p>
                   </div>
                 </div>
