@@ -3,7 +3,7 @@ import { Building2, Calendar, MapPin, ChevronRight } from 'lucide-react';
 const experiences = [
   {
     company: 'First Horizon Bank',
-    location: 'Memphis, TN',
+    location: 'Pittsburgh, PA',
     role: 'Sr. Full Stack Java Developer',
     period: 'Dec 2023 - Present',
     description: 'Spearheaded architectural redesign of comprehensive online banking platform, driving innovation and improving customer engagement across millions of daily transactions.',
